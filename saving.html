@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Goals | Warrior Bank</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; color: #333; background-color: #f4f7f6; }
+        nav { background: #2c3e50; color: white; padding: 1rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #f1c40f; text-decoration: none; }
+        .nav-links a { color: white; text-decoration: none; margin-left: 20px; }
+        
+        .hero-savings { background: #27ae60; color: white; padding: 60px 20px; text-align: center; }
+        
+        .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
+        
+        .bucket-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px; }
+        
+        .bucket-card { background: white; border-radius: 12px; padding: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 5px solid #f1c40f; }
+        
+        .progress-bar { background: #e0e0e0; border-radius: 20px; height: 15px; margin: 15px 0; overflow: hidden; }
+        .progress-fill { background: #27ae60; height: 100%; border-radius: 20px; }
+
+        .stats { display: flex; justify-content: space-between; font-weight: bold; font-size: 0.9rem; }
+        
+        .interest-callout { background: #fff; border: 2px dashed #27ae60; padding: 20px; border-radius: 8px; margin-top: 40px; text-align: center; }
+        
+        .btn-save { background: #2c3e50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px; transition: 0.3s; }
+        .btn-save:hover { background: #34495e; }
+
+        footer { text-align: center; padding: 20px; background: #eee; font-size: 0.8rem; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="logo">WARRIOR BANK</a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="checking.html">Checking</a>
+        <a href="learn.html">Learn</a>
+        <a href="home.html">Login</a>
+    </div>
+</nav>
+
+<section class="hero-savings">
+    <h1>Strategic Savings</h1>
+    <p>Don't just save money. Save for a mission.</p>
+</section>
+
+<main class="container">
+    <h2>Your Savings Buckets</h2>
+    <p>Organize your money into specific goals. We'll help you get there faster.</p>
+
+    <div class="bucket-grid">
+        <div class="bucket-card">
+            <h3>💻 New MacBook Pro</h3>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%;"></div>
+            </div>
+            <div class="stats">
+                <span>150,000RWF / RWF200,000</span>
+                <span>75%</span>
+            </div>
+            <p>Target Date: September 2026</p>
+            <a href="#" class="btn-save">Add Funds</a>
+        </div>
+
+        <div class="bucket-card">
+            <h3>✈️ Spring Break 2027</h3>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 30%;"></div>
+            </div>
+            <div class="stats">
+                <span>30000RWF / 100,000RWF</span>
+                <span>30%</span>
+            </div>
+            <p>Target Date: March 2027</p>
+            <a href="#" class="btn-save">Add Funds</a>
+        </div>
+
+        <div class="bucket-card">
+            <h3>🛡️ Emergency Fund</h3>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%;"></div>
+            </div>
+            <div class="stats">
+                <span>500 000RWF / 500 000RWF</span>
+                <span>Goal Met!</span>
+            </div>
+            <p>Peace of mind for car repairs or late fees.</p>
+            <a href="#" class="btn-save" style="background:#27ae60;">Withdraw</a>
+        </div>
+    </div>
+
+    <div class="interest-callout">
+        <h3>Warrior High-Yield Growth</h3>
+        <p>Earn **4.50% APY** on your first 25,500RWF in savings. Grow your war chest while you sleep.</p>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Warrior Bank. Member FDIC. Annual Percentage Yield (APY) is accurate as of May 2026.</p>
+</footer>
+
+</body>
+</html>

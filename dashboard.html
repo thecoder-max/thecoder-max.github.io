@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Warrior Bank</title>
+    <style>
+        :root { --dark: #2c3e50; --gold: #f1c40f; --light: #ecf0f1; --green: #27ae60; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f0f2f5; display: flex; }
+        
+        /* Sidebar Navigation */
+        .sidebar { width: 240px; background: var(--dark); height: 100vh; color: white; position: fixed; padding: 20px; }
+        .sidebar h2 { color: var(--gold); font-size: 1.2rem; margin-bottom: 30px; }
+        .nav-item { padding: 12px 15px; margin-bottom: 5px; border-radius: 8px; cursor: pointer; transition: 0.3s; display: block; color: white; text-decoration: none; }
+        .nav-item:hover, .nav-item.active { background: #34495e; color: var(--gold); }
+
+        /* Main Content Area */
+        .main-content { margin-left: 280px; padding: 40px; width: calc(100% - 280px); }
+        .header-flex { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+        
+        /* Dashboard Cards */
+        .grid-container { display: grid; grid-template-columns: 2fr 1fr; gap: 30px; }
+        .balance-card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .amount { font-size: 2.5rem; font-weight: bold; color: var(--dark); margin: 10px 0; }
+        
+        .action-btns { display: flex; gap: 10px; margin-top: 20px; }
+        .btn-action { flex: 1; padding: 12px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; background: var(--light); transition: 0.2s; }
+        .btn-action:hover { background: #dee2e6; }
+
+        .transactions { background: white; padding: 25px; border-radius: 15px; margin-top: 30px; }
+        .tx-item { display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px solid #eee; }
+        
+        .points-card { background: linear-gradient(135deg, #f1c40f, #f39c12); color: var(--dark); padding: 25px; border-radius: 15px; text-align: center; }
+        .points-val { font-size: 2rem; font-weight: bold; }
+
+        @media (max-width: 1024px) { .grid-container { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<aside class="sidebar">
+    <h2>WARRIOR BANK</h2>
+    <a href="#" class="nav-item">Transfer Money</a>
+    <a href="learn.html" class="nav-item">Warrior Academy</a>
+    <a href="index.html" class="nav-item" style="margin-top: 50px; color: #e74c3c;">Logout</a>
+</aside>
+
+<main class="main-content">
+    <div class="header-flex">
+        <h1>Welcome back, Warrior!</h1>
+        <div style="text-align: right;">
+            <small>Last Login: Today, 4:45 PM</small>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="left-col">
+            <div class="balance-card">
+                <small>TOTAL AVAILABLE BALANCE</small>
+                <div class="amount">0RWF</div>
+                <div style="color: var(--green); font-size: 0.9rem;">+ $0 since last week</div>
+                
+                <div class="action-btns">
+                    <button class="btn-action">💸 Send</button>
+                    <button class="btn-action">📥 Deposit</button>
+                    <button class="btn-action">📊 Analyze</button>
+                </div>
+            </div>
+
+            <div class="transactions">
+                <h3>Recent Transactions</h3>
+                <div class="tx-item">
+                    <span>IFAK Cantine</span>
+                    <span style="color: #e74c3c;">-7000RWF</span>
+                </div>
+                <div class="tx-item">
+                    <span>University Bookstore</span>
+                    <span style="color: #e74c3c;">-120,000RWF</span>
+                </div>
+                <div class="tx-item">
+                    <span>Venmo Transfer (Rent)</span>
+                    <span style="color: #27ae60;">+800,000RWF</span>
+                </div>
+                <div class="tx-item">
+                    <span>Netflix Subscription</span>
+                    <span style="color: #e74c3c;">-15,000RWF</span>
+                </div>
+                <a href="#" style="display: block; text-align: center; margin-top: 15px; font-size: 0.9rem; color: var(--dark);">View All Transactions</a>
+            </div>
+        </div>
+
+        <div class="right-col">
+            <div class="points-card">
+                <h3>Warrior Rewards</h3>
+                <div class="points-val">0</div>
+                <p>Points until next reward: 250</p>
+                <button style="background: var(--dark); color: white; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer;">Redeem</button>
+            </div>
+
+            <div class="balance-card" style="margin-top: 30px;">
+                <h3>Upcoming Bills</h3>
+                <p style="font-size: 0.9rem; color: #666;">Tuition Payment - May 15</p>
+                <strong style="color: #e74c3c;">RWF1,200,000</strong>
+                <hr>
+                <p style="font-size: 0.9rem; color: #666;">Phone Bill - May 18</p>
+                <strong>RWF45,000</strong>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

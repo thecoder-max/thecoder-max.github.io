@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Warrior Bank</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; display: flex; height: 100vh; background: #2c3e50; }
+        
+        /* Split Screen Design */
+        .login-left { 
+            flex: 1; 
+            background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=800&q=80'); 
+            background-size: cover; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            padding: 60px; 
+            color: white;
+        }
+
+        .login-right { 
+            width: 450px; 
+            background: white; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            padding: 40px; 
+            box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+        }
+
+        .logo-small { color: #f1c40f; font-weight: bold; font-size: 1.2rem; text-decoration: none; margin-bottom: 20px; display: block; }
+        
+        h2 { margin-bottom: 10px; color: #2c3e50; }
+        p { color: #666; margin-bottom: 30px; }
+
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; font-size: 0.9rem; }
+        input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; }
+
+        .btn-login { width: 100%; background: #2c3e50; color: white; padding: 15px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; transition: 0.3s; margin-top: 10px; }
+        .btn-login:hover { background: #34495e; }
+
+        .extra-links { display: flex; justify-content: space-between; margin-top: 20px; font-size: 0.85rem; }
+        .extra-links a { color: #2980b9; text-decoration: none; }
+
+        .security-note { margin-top: 40px; padding: 15px; background: #f9f9f9; border-radius: 5px; font-size: 0.8rem; border: 1px solid #eee; text-align: center; }
+
+        @media (max-width: 850px) {
+            .login-left { display: none; }
+            .login-right { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-left">
+    <h1>Welcome back, Warrior.</h1>
+    <p>"An investment in knowledge pays the best interest." — Benjamin Franklin</p>
+    <div style="font-size: 0.9rem; margin-top: 20px; color: #f1c40f;">🛡️ Secure 256-bit Encryption Active</div>
+</div>
+
+<div class="login-right">
+    <a href="index.html" class="logo-small">← BACK TO WARRIOR BANK</a>
+    <h2>Log In</h2>
+    <p>Access your war chest and manage your goals.</p>
+
+    <form>
+        <div class="form-group">
+            <label for="student-id">Student Email or ID</label>
+            <input type="text" id="student-id" placeholder="warrior@university.edu">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="••••••••">
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <input type="checkbox" id="remember" style="width: auto; margin-right: 5px;">
+            <label for="remember" style="display: inline; font-weight: normal;">Remember this device</label>
+        </div>
+
+        <button type="button" class="btn-login" onclick="location.href='dashboard.html'">Secure Login</button>
+    </form>
+
+    <div class="extra-links">
+        <a href="#">Forgot Password?</a>
+        <a href="#">Join the Tribe</a>
+    </div>
+
+    <div class="security-note">
+        <strong>Shield Status:</strong> Verified Secure Connection. Always check the URL for <code>warriorbank.edu</code> before logging in.
+    </div>
+</div>
+
+</body>
+</html>

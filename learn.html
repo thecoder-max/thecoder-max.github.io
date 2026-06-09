@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warrior Academy | Financial Literacy</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; color: #333; background: #fdfdfd; }
+        nav { background: #2c3e50; color: white; padding: 1rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #f1c40f; text-decoration: none; }
+        .nav-links a { color: white; text-decoration: none; margin-left: 20px; }
+        
+        .academy-hero { background: #8e44ad; color: white; padding: 50px 20px; text-align: center; }
+        
+        .search-bar { margin: -25px auto 30px; max-width: 600px; }
+        .search-bar input { width: 100%; padding: 15px; border-radius: 30px; border: 1px solid #ddd; box-shadow: 0 4px 10px rgba(0,0,0,0.1); font-size: 1rem; }
+
+        .content-grid { max-width: 1100px; margin: auto; padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        .article-card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.2s; border-bottom: 4px solid #8e44ad; }
+        .article-card:hover { transform: translateY(-5px); }
+        .article-img { height: 180px; background: #ddd; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+        .article-body { padding: 20px; }
+        .tag { background: #e8eaf6; color: #3f51b5; padding: 4px 10px; border-radius: 5px; font-size: 0.75rem; font-weight: bold; text-transform: uppercase; }
+        
+        .newsletter { background: #f1c40f; padding: 40px; text-align: center; margin-top: 50px; }
+        .btn-dark { background: #2c3e50; color: white; padding: 10px 25px; text-decoration: none; border-radius: 5px; }
+
+        footer { text-align: center; padding: 20px; background: #eee; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="logo">WARRIOR BANK</a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="checking.html">Checking</a>
+        <a href="saving.html">Savings</a>
+        <a href="home.html">Login</a>
+    </div>
+</nav>
+
+<section class="academy-hero">
+    <h1>Warrior Academy</h1>
+    <p>Knowledge is your greatest weapon. Master your money today.</p>
+</section>
+
+<div class="search-bar">
+    <input type="text" placeholder="Search topics: 'How to build credit', 'Filing taxes'...">
+</div>
+
+<main class="content-grid">
+    <article class="article-card">
+        <div class="article-img">📈</div>
+        <div class="article-body">
+            <span class="tag">Credit Basics</span>
+            <h3>What is a Credit Score?</h3>
+            <p>Learn how those three digits affect your ability to rent an apartment or buy a car.</p>
+            <a href="#">Read Lesson &rarr;</a>
+        </div>
+    </article>
+
+    <article class="article-card">
+        <div class="article-img">🍔</div>
+        <div class="article-body">
+            <span class="tag">Budgeting</span>
+            <h3>The 50/30/20 Rule</h3>
+            <p>A simple way to manage your work-study income without missing out on the fun stuff.</p>
+            <a href="#">Read Lesson &rarr;</a>
+        </div>
+    </article>
+
+    <article class="article-card">
+        <div class="article-img">📑</div>
+        <div class="article-body">
+            <span class="tag">Taxes</span>
+            <h3>First Job? Meet the W-2</h3>
+            <p>We break down what those deductions on your paycheck actually mean.</p>
+            <a href="#">Read Lesson &rarr;</a>
+        </div>
+    </article>
+
+    <article class="article-card">
+        <div class="article-img">🎓</div>
+        <div class="article-body">
+            <span class="tag">Student Loans</span>
+            <h3>Subsidized vs. Unsubsidized</h3>
+            <p>Understanding the difference can save you thousands in interest over four years.</p>
+            <a href="#">Read Lesson &rarr;</a>
+        </div>
+    </article>
+</main>
+
+<section class="newsletter">
+    <h2>Weekly Battle Plans</h2>
+    <p>Get one 2-minute money tip in your inbox every Monday.</p><br>
+    <a href="#" class="btn-dark">Subscribe to Academy News</a>
+</section>
+
+<footer>
+    <p>&copy; 2026 Warrior Bank Academy. Educational content only. Consult a professional for specific tax advice.</p>
+</footer>
+
+</body>
+</html>

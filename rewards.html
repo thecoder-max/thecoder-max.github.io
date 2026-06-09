@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warrior Rewards | Perks for Students</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; color: #333; background: #fff; }
+        nav { background: #2c3e50; color: white; padding: 1rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #f1c40f; text-decoration: none; }
+        .nav-links a { color: white; text-decoration: none; margin-left: 20px; }
+        
+        .rewards-hero { background: linear-gradient(45deg, #f1c40f, #f39c12); color: #2c3e50; padding: 80px 20px; text-align: center; }
+        
+        .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
+        
+        .perks-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px; }
+        
+        .perk-card { border: 2px solid #f1c40f; border-radius: 15px; padding: 30px; position: relative; overflow: hidden; transition: 0.3s; }
+        .perk-card:hover { background: #fffcf0; transform: scale(1.02); }
+        .perk-card h3 { color: #2c3e50; margin-top: 0; }
+        
+        .badge { position: absolute; top: 15px; right: 15px; background: #2c3e50; color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: bold; }
+
+        .partner-section { background: #f9f9f9; padding: 60px 20px; text-align: center; margin-top: 50px; border-radius: 20px; }
+        .partner-logos { display: flex; justify-content: center; gap: 40px; margin-top: 30px; flex-wrap: wrap; opacity: 0.6; font-weight: bold; font-size: 1.2rem; }
+
+        .cta-footer { background: #2c3e50; color: white; padding: 40px; text-align: center; border-radius: 15px; margin-top: 50px; }
+        .btn-white { background: white; color: #2c3e50; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin-top: 15px; }
+
+        footer { text-align: center; padding: 20px; background: #eee; font-size: 0.8rem; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="logo">WARRIOR BANK</a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">My Dashboard</a>
+        <a href="learn.html">Academy</a>
+    </div>
+</nav>
+
+<header class="rewards-hero">
+    <h1>Victory Perks</h1>
+    <p>Your hard work deserves interest—and a few free coffees.</p>
+</header>
+
+<main class="container">
+    <section>
+        <h2>How to Earn Points</h2>
+        <div class="perks-grid">
+            <div class="perk-card">
+                <div class="badge">HOT</div>
+                <h3>The "A" Bonus</h3>
+                <p>Upload your end-of-semester transcript. For every 'A' grade, we'll deposit **500 Warrior Points** into your account.</p>
+            </div>
+
+            <div class="perk-card">
+                <h3>Financial Fitness</h3>
+                <p>Complete a course in the <strong>Warrior Academy</strong>. Earn **200 points** per lesson finished.</p>
+            </div>
+
+            <div class="perk-card">
+                <h3>Refer a Friend</h3>
+                <p>Invite a classmate to join the Tribe. Once they open an account, you both get **1,000 points** ($10 value).</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="partner-section">
+        <h2>Spend Your Points Here</h2>
+        <p>Redeem points for gift cards, campus bookstore credit, or cash back.</p>
+        <div class="partner-logos">
+            <span>☕ Campus Brews</span>
+            <span>📚 University Press</span>
+            <span>🍕 Pizza Planet</span>
+            <span>🎧 TechZone</span>
+        </div>
+    </section>
+
+    <div class="cta-footer">
+        <h2>Start Winning Today</h2>
+        <p>Already a member? Check your points balance in your dashboard.</p>
+        <a href="dashboard.html" class="btn-white">Go to Dashboard</a>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Warrior Bank. Points have no cash value until redeemed through the Warrior Portal. Partner list subject to change.</p>
+</footer>
+
+</body>
+</html>

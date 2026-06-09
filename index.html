@@ -1,101 +1,59 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warrior Bank | Conquer Your Finances</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; color: #333; }
+        nav { background: #2c3e50; color: white; padding: 1rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #f1c40f; }
+        .nav-links a { color: white; text-decoration: none; margin-left: 20px; }
+        .hero { background: #34495e; color: white; padding: 60px 20px; text-align: center; }
+        .btn { background: #f1c40f; color: #2c3e50; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 40px; }
+        .card { border: 1px solid #ddd; padding: 20px; border-radius: 8px; text-align: center; }
+        footer { text-align: center; padding: 20px; background: #eee; font-size: 0.8rem; }
+    </style>
 </head>
-<body style="margin:0; font-family:Arial, sans-serif; background-color:#f4f6f9;">
+<body>
 
-    <!-- Header -->
-    <div style="background:linear-gradient(to right, #4f46e5, #7c3aed); color:white; text-align:center; padding:50px;">
-        <img src="randomnigga.jpeg"
-             alt="Profile Picture"
-             style="width:30px; height:30px; border-radius:50%; border:4px solid white; object-fit:cover;">
-
-        <h1 style="margin-top:15px;">Noah</h1>
-        <p>Aspiring Software Developer | Problem Solver | Lifelong Learner</p>
+<nav>
+    <div class="logo">WARRIOR BANK</div>
+    <div class="nav-links">
+        <a href="rewards.html">Rewards</a>
+        <a href="learn.html">Learn</a>
+        <a href="checking.html">checking</a>
+        <a href="contact.html">contact</a>
+        <a href="home.html" style="border: 1px solid #f1c40f; padding: 5px 10px;">Login</a>
     </div>
+</nav>
 
-    <!-- About Me -->
-    <div style="background:white; margin:20px; padding:25px; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-        <h2 style="color:#4f46e5;">About Me</h2>
-        <p>
-            Hello! I am a passionate student interested in technology,
-            software development, and innovation. I enjoy learning new skills,
-            building projects, and collaborating with others to solve real-world problems.
-        </p>
+<section class="hero">
+    <h1>Arm Yourself for the Real World.</h1>
+    <p>The only bank designed by students, for students. No fees. No stress.</p><br>
+    <a href="about.html" class="btn">Join the Tribe</a>
+</section>
+
+<section class="features">
+    <div class="card">
+    
+        <h3>0RWF Monthly Fees</h3>
+        <p>Keep every penny you earn. No minimum balance requirements.</p>
     </div>
-
-    <!-- Skills -->
-    <div style="background:white; margin:20px; padding:25px; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-        <h2 style="color:#4f46e5;">Skills</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>Python Programming</li>
-            <li>Problem Solving</li>
-            <li>Communication Skills</li>
-        </ul>
+    <div class="card">
+        <h3>Grade Rewards</h3>
+        <p>Earn 1% APY bonus for every 'A' on your semester transcript.</p>
     </div>
-
-    <!-- Hobbies -->
-    <div style="background:white; margin:20px; padding:25px; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-        <h2 style="color:#4f46e5;">Hobbies & Interests</h2>
-        <ul>
-            <li>Reading Technology Articles</li>
-            <li>Programming Personal Projects</li>
-            <li>Playing Sports</li>
-            <li>Listening to Music</li>
-            <li>Exploring New Technologies</li>
-        </ul>
+    <div class="card">
+        <h3>Instant Transfers</h3>
+        <p>Send money to classmates for pizza or rent in seconds.</p>
     </div>
+</section>
 
-    <!-- Academic Background -->
-    <div style="background:white; margin:20px; padding:25px; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-        <h2 style="color:#4f46e5;">Academic Background</h2>
-
-        <h3>Current Education</h3>
-        <p>
-            Bachelor of Science in Computer Science<br>
-            XYZ University<br>
-            2023 - Present
-        </p>
-
-        <h3>Previous Education</h3>
-        <p>
-            High School Diploma<br>
-            ABC Secondary School<br>
-            2019 - 2022
-        </p>
-    </div>
-
-    <!-- Contact -->
-    <div style="background:white; margin:20px; padding:25px; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-        <h2 style="color:#4f46e5;">Contact Information</h2>
-
-        <p><strong>Email:</strong> yourname@email.com</p>
-        <p><strong>Phone:</strong> +250 XXX XXX XXX</p>
-        <p><strong>Location:</strong> Kigali, Rwanda</p>
-
-        <h3>Reach Me Online</h3>
-
-        <p>
-            <a href="https://linkedin.com" style="color:#4f46e5; text-decoration:none;">
-                LinkedIn
-            </a>
-        </p>
-
-        <p>
-            <a href="https://github.com" style="color:#4f46e5; text-decoration:none;">
-                GitHub
-            </a>
-        </p>
-    </div>
-
-    <!-- Footer -->
-    <div style="background:#4f46e5; color:white; text-align:center; padding:20px; margin-top:30px;">
-        <p>&copy; 2026 Your Name. All Rights Reserved.</p>
-    </div>
+<footer>
+    <p>&copy; 2026 Warrior Bank. Member FDIC. Equal Housing Lender.</p>
+</footer>
 
 </body>
 </html>
