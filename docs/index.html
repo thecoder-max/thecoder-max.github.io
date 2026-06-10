@@ -1,0 +1,78 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>StudentBank | Dashboard</title>
+</head>
+<body style="margin:0; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background:#f0f7ff; color:#1e2a3e;">
+    <div style="max-width:1280px; margin:0 auto; padding:20px;">
+        <!-- Header / Navigation -->
+        <div style="display:flex; justify-content:space-between; align-items:center; background:#0a2b3e; padding:15px 25px; border-radius:28px; margin-bottom:30px; box-shadow:0 8px 20px rgba(0,0,0,0.05);">
+            <div style="font-size:28px; font-weight:800; color:#ffcd3c;">📘 StudentBank</div>
+            <div style="display:flex; gap:20px; flex-wrap:wrap;">
+                <a href="index.html" style="color:white; text-decoration:none; font-weight:600; background:#2c5a6e; padding:8px 16px; border-radius:40px;">🏠 Home</a>
+                <a href="accounts.html" style="color:white; text-decoration:none; font-weight:500;">💳 Accounts</a>
+                <a href="transfer.html" style="color:white; text-decoration:none; font-weight:500;">💸 Transfer</a>
+                <a href="transactions.html" style="color:white; text-decoration:none; font-weight:500;">📜 History</a>
+                <a href="savings.html" style="color:white; text-decoration:none; font-weight:500;">🎯 Savings</a>
+                <a href="scholarships.html" style="color:white; text-decoration:none; font-weight:500;">🎓 Scholarships</a>
+                <a href="budget.html" style="color:white; text-decoration:none; font-weight:500;">📊 Budget</a>
+                <a href="profile.html" style="color:white; text-decoration:none; font-weight:500;">👤 Profile</a>
+            </div>
+        </div>
+
+        <!-- Hero Greeting -->
+        <div style="background:linear-gradient(135deg, #1f6392, #0a3b4f); border-radius:32px; padding:30px 35px; margin-bottom:30px; color:white; box-shadow:0 12px 24px rgba(0,0,0,0.1);">
+            <h1 style="margin:0 0 8px 0; font-size:36px;">Welcome back, <span style="color:#ffcd3c;">Warrior</span> 🎓</h1>
+            <p style="font-size:18px; opacity:0.9;">Manage your student finances, track spending, and save smartly.</p>
+        </div>
+
+        <!-- Balance Overview Cards -->
+        <div style="display:flex; flex-wrap:wrap; gap:24px; margin-bottom:40px;">
+            <div style="flex:1; min-width:200px; background:white; border-radius:28px; padding:22px; box-shadow:0 6px 14px rgba(0,0,0,0.05);">
+                <div style="font-size:16px; color:#5c6f87;">Checking Account</div>
+                <div style="font-size:36px; font-weight:800; margin:12px 0;">$245.80</div>
+                <div style="font-size:14px; color:#2e7d32;">✔️ Available for spending</div>
+            </div>
+            <div style="flex:1; min-width:200px; background:white; border-radius:28px; padding:22px; box-shadow:0 6px 14px rgba(0,0,0,0.05);">
+                <div style="font-size:16px; color:#5c6f87;">Savings Goal</div>
+                <div style="font-size:36px; font-weight:800; margin:12px 0;">$620.50</div>
+                <div style="font-size:14px; color:#ed6c02;">🎯 42% of semester target</div>
+            </div>
+            <div style="flex:1; min-width:200px; background:white; border-radius:28px; padding:22px; box-shadow:0 6px 14px rgba(0,0,0,0.05);">
+                <div style="font-size:16px; color:#5c6f87;">Upcoming Bills</div>
+                <div style="font-size:24px; font-weight:700; margin:12px 0;">📚 $89.00</div>
+                <div style="font-size:14px; color:#d32f2f;">Due in 4 days (Textbooks)</div>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div style="background:white; border-radius:28px; padding:25px; margin-bottom:30px; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
+            <h3 style="margin-top:0; margin-bottom:20px;">⚡ Quick Actions</h3>
+            <div style="display:flex; gap:16px; flex-wrap:wrap;">
+                <a href="transfer.html" style="background:#0a2b3e; color:white; padding:12px 24px; border-radius:60px; text-decoration:none; font-weight:600;">Send Money</a>
+                <a href="budget.html" style="background:#ffcd3c; color:#1e2a3e; padding:12px 24px; border-radius:60px; text-decoration:none; font-weight:600;">View Budget</a>
+                <a href="savings.html" style="background:#2c5a6e; color:white; padding:12px 24px; border-radius:60px; text-decoration:none;">Set Savings Goal</a>
+            </div>
+        </div>
+
+        <!-- Recent Activity (simulated) -->
+        <div style="background:white; border-radius:28px; padding:25px;">
+            <h3 style="margin:0 0 15px 0;">🕒 Recent Transactions</h3>
+            <div style="border-bottom:1px solid #e9ecef; padding:14px 0; display:flex; justify-content:space-between;">
+                <span>🍕 Campus Pizza</span><span>-$12.50</span><span style="color:#6c757d;">Today</span>
+            </div>
+            <div style="border-bottom:1px solid #e9ecef; padding:14px 0; display:flex; justify-content:space-between;">
+                <span>📖 Bookstore Credit</span><span style="color:#2e7d32;">+$250.00</span><span style="color:#6c757d;">Yesterday</span>
+            </div>
+            <div style="padding:14px 0; display:flex; justify-content:space-between;">
+                <span>☕ Study Café</span><span>-$5.75</span><span style="color:#6c757d;">2 days ago</span>
+            </div>
+            <a href="transactions.html" style="display:inline-block; margin-top:18px; color:#1f6392;">View Full History →</a>
+        </div>
+        <div style="text-align:center; margin-top:40px; font-size:13px; color:#6c757d;">© StudentBank — designed for students, by financial educators.</div>
+    </div>
+</body>
+</html>
